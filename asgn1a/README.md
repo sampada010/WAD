@@ -18,4 +18,4 @@ Ensure you have the following:
 ### **Installation**
 1. **Clone or Download** the repository:
    ```sh
-   git clone https://github.com/your-username/WAD.git
+   git clone https://github.com/sampada010/WAD.git
