@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const users = JSON.parse(localStorage.getItem('users')) || [];
             
             // Find user with matching email and password
-            const user = users.find(u => u.email === email);
+            const user = users.find(u => u.email === email && u.password === password);
             
             if (user) {
                 // Show success message
@@ -54,7 +54,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Reset form
                 form.reset();
                 
-                
+            }
+            else {
+                document.getElementById('loginError').style.display = 'block';
             }
         }
     });
